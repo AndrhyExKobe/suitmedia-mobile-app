@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="suitmedia.com.dev.suitemedia.ui.screenthree.model.OnEventItemModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layGetEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/sizeMarginMedium"
+        android:layout_marginStart="@dimen/sizeMarginSmall"
+        android:layout_marginEnd="@dimen/sizeMarginSmall"
+        >
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/sizeRadius"
+                app:cardElevation="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_rectangle_border_gray"
+                    >
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ivImages"
+                        android:layout_width="@dimen/sizeImageEvent"
+                        android:layout_height="@dimen/sizeImageEvent"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintDimensionRatio="16:7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:shapeAppearance="@style/ShapeImageView.Rounded"
+                        android:layout_margin="@dimen/sizePaddingInside"
+                        source="@{model.img}"
+                        />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layDesc"
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/ivImages"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/ivImages"
+                        app:layout_constraintBottom_toBottomOf="@id/ivImages"
+                        android:layout_marginStart="@dimen/sizePaddingInside"
+                        android:layout_marginEnd="@dimen/sizePaddingInside"
+                        android:orientation="vertical"
+                        >
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Text.Title.Medium.Black"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:text="@{model.title}"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Text"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:text="@{model.desc}"
+                            android:layout_marginTop="@dimen/sizeMarginText"
+                            />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/sizeMarginText"
+                            android:weightSum="1"
+                            >
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/Text.Small"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:text="@{model.date}"
+                                android:layout_weight="0.5"
+                                />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/Text.Small"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:text="@{model.time}"
+                                android:layout_weight="0.5"
+                                />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

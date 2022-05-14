@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="ms_external_files"
+        path="." />
+    <files-path
+        name="ms_internal_files"
+        path="." />
+    <cache-path
+        name="ms_cache_files"
+        path="." />
+</paths>

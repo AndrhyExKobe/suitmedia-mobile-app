@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainNavigation"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/screenOneFragment"
+    >
+
+    <fragment
+        android:id="@+id/screenOneFragment"
+        android:name="suitmedia.com.dev.suitemedia.ui.screenone.ScreenOneFragment"
+        android:label="ScreenOneFragment"
+        tools:layout="@layout/fragment_screen_one"
+        >
+        <action
+            android:id="@+id/action_screenOneFragment_to_screenTwoFragment"
+            app:destination="@id/screenTwoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            >
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/screenTwoFragment"
+        android:name="suitmedia.com.dev.suitemedia.ui.screentwo.ScreenTwoFragment"
+        android:label="ScreenTwoFragment"
+        tools:layout="@layout/fragment_screen_two"
+        >
+        <action
+            android:id="@+id/action_screenTwoFragment_to_screenThreeFragment"
+            app:destination="@id/screenThreeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            >
+        </action>
+        <action
+            android:id="@+id/action_screenTwoFragment_to_screenFourFragment"
+            app:destination="@id/screenFourFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            >
+        </action>
+
+        <action
+            android:id="@+id/action_screenTwoFragment_to_screenBaseEventFragment"
+            app:destination="@id/screenBaseEventFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            >
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/screenBaseEventFragment"
+        android:name="suitmedia.com.dev.suitemedia.ui.screenthree.ScreenBaseEventFragment"
+        android:label="ScreenBaseEventFragment"
+        tools:layout="@layout/fragment_screen_base_event"
+        >
+        <action
+            android:id="@+id/action_screenBaseEventFragment_to_screenTwoFragment"
+            app:destination="@id/screenTwoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/screenThreeFragment"
+        android:name="suitmedia.com.dev.suitemedia.ui.screenthree.ScreenThreeFragment"
+        android:label="ScreenThreeFragment"
+        tools:layout="@layout/fragment_screen_three"
+        >
+
+        <action
+            android:id="@+id/action_screenThreeFragment_to_screenTwoFragment"
+            app:destination="@id/screenTwoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            />
+
+        <action
+            android:id="@+id/action_screenThreeFragment_to_screenFiveFragment"
+            app:destination="@id/screenFiveFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/screenFourFragment"
+        android:name="suitmedia.com.dev.suitemedia.ui.screenfour.ScreenFourFragment"
+        android:label="ScreenFourFragment"
+        tools:layout="@layout/fragment_screen_four"
+        >
+        <action
+            android:id="@+id/action_screenFourFragment_to_screenTwoFragment"
+            app:destination="@id/screenTwoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/screenFiveFragment"
+        android:name="suitmedia.com.dev.suitemedia.ui.screenfive.ScreenFiveFragment"
+        android:label="ScreenFiveFragment"
+        tools:layout="@layout/fragment_screen_five"
+        >
+        <action
+            android:id="@+id/action_screenFiveFragment_to_screenThreeFragment"
+            app:destination="@id/screenThreeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            />
+    </fragment>
+
+
+
+</navigation>

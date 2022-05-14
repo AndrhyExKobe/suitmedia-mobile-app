@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/sizeMarginSmall">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDialogTitle"
+        style="@style/Text.Title"
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/toolbarHeight"
+        android:gravity="start|center_vertical"
+        android:maxLines="1"
+        android:paddingStart="@dimen/sizeMarginSmall"
+        android:paddingEnd="@dimen/sizeMarginSmall"
+        android:text="@string/pilih_foto_dari"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvActionGallery"
+        style="@style/Text"
+        android:layout_width="@dimen/zero"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/sizeMarginSmall"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="start|center_vertical"
+        android:maxLines="1"
+        android:paddingStart="@dimen/sizeMarginSmall"
+        android:paddingEnd="@dimen/sizeMarginSmall"
+        android:text="@string/galeri"
+        android:textColor="@color/secondaryBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDialogTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvActionCamera"
+        style="@style/Text"
+        android:layout_width="@dimen/zero"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="@dimen/sizeMarginSmall"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="start|center_vertical"
+        android:maxLines="1"
+        android:paddingStart="@dimen/sizeMarginSmall"
+        android:paddingEnd="@dimen/sizeMarginSmall"
+        android:text="@string/kamera"
+        android:textColor="@color/secondaryBlack"
+        app:layout_constraintEnd_toEndOf="@id/tvActionGallery"
+        app:layout_constraintStart_toStartOf="@id/tvActionGallery"
+        app:layout_constraintTop_toBottomOf="@id/tvActionGallery" />
+</androidx.constraintlayout.widget.ConstraintLayout>

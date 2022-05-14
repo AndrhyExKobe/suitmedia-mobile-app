@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="sizeRadius">8dp</dimen>
+    <dimen name="sizeRadiusMedium">16dp</dimen>
+    <dimen name="sizeImage">90dp</dimen>
+
+    <dimen name="sizeMarginExSmall">14dp</dimen>
+    <dimen name="sizeMarginSmall">18dp</dimen>
+    <dimen name="sizeMarginMedium">24dp</dimen>
+    <dimen name="sizeMarginLarge">32dp</dimen>
+    <dimen name="sizeMarginTop">48dp</dimen>
+
+    <dimen name="sizePaddingInside">16dp</dimen>
+
+    <dimen name="sizeMarginText">8dp</dimen>
+
+    <dimen name="sizePaddingEditText">14dp</dimen>
+    <dimen name="buttonHeight">40dp</dimen>
+    <dimen name="buttonHeight48">48dp</dimen>
+
+    <dimen name="sizeDistance84">84dp</dimen>
+
+    <dimen name="sizeTextExSmall">10sp</dimen>
+    <dimen name="sizeTextSmall">12sp</dimen>
+    <dimen name="sizeTextMedium">14sp</dimen>
+    <dimen name="sizeTextExMedium">16sp</dimen>
+    <dimen name="sizeTextLarge">18sp</dimen>
+    <dimen name="sizeTextTitle">24sp</dimen>
+    <dimen name="sizeTextButton">16sp</dimen>
+
+    <dimen name="toolbarHeight">56dp</dimen>
+    <dimen name="toolbarHeightMaps">80dp</dimen>
+
+    <dimen name="sizeIcon">24dp</dimen>
+
+    <dimen name="sizeImageEvent">90dp</dimen>
+
+
+</resources>

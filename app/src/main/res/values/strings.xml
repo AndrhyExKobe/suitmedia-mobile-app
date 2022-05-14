@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Suitemedia</string>
+
+    <string name="hint_input_name">Type name here...</string>
+    <string name="hint_input_palindrome">Type text palindrome...</string>
+
+    <string name="label_next">Next</string>
+    <string name="label_check">Check</string>
+    <string name="label_hello">Hallo,</string>
+    <string name="batal">Batal</string>
+
+    <string name="label_choose_event">Choose Event</string>
+    <string name="label_choose_guest">Choose Guest</string>
+
+    <string name="label_welcome">Welcome</string>
+    <string name="label_welcome_desc">This is app for suitmedia mobile developer test</string>
+    <string name="label_copyright">Copyright © 2020 Suitmedia All Rights Reserved.</string>
+
+    <string name="pilih_foto_dari">Pilih foto dari</string>
+    <string name="galeri">Galeri</string>
+    <string name="kamera">Kamera</string>
+    <string name="image_picker_provider_authority_suffix" translatable="false">.imagepicker.provider</string>
+    <string name="kamera_not_found">Kamera tidak ditemukan</string>
+    <string name="kamera_not_create_file">Kamera tidak dapat mengkoversi ke file gambar</string>
+    <string name="permission_camera_denied">
+        <![CDATA[Storage permission is needed to take a picture. Please allow storage permission from Settings > Permissions.]]></string>
+    <string name="permission_gallery_denied">
+        <![CDATA[Storage permission is needed to pick gallery image. Please allow storage permission from Settings > Permissions.]]></string>
+    <string name="permission_camera_extended_denied">
+        <![CDATA[Camera and Storage permissions are needed to take a picture. Please allow both the requested permissions from Settings > Permissions.]]></string>
+    <string name="error_failed_to_compress_image">Gagal kompresi gambar</string>
+    <string name="error_failed_to_crop_image">Gagal untuk crop gambar</string>
+    <string name="error_failed_pick_gallery_image">Gagal mengambil gambar dari galeri</string>
+    <string name="error_task_cancelled">Task Cancelled</string>
+
+    <string name="google_api_key" translatable="false">AIzaSyBM_YCaUKl1WkQoI3OL0GRgJ3GF5CWr8Fg</string>
+</resources>

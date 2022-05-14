@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="suitmedia.com.dev.suitemedia.ui.screenfour.model.OnGuestItemModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layGetGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/sizeMarginMedium"
+        android:layout_marginStart="@dimen/sizeMarginSmall"
+        android:layout_marginEnd="@dimen/sizeMarginSmall"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivImages"
+            android:layout_width="@dimen/sizeImageEvent"
+            android:layout_height="@dimen/sizeImageEvent"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="16:7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/ShapeImageView.Circle"
+            tools:src="@tools:sample/backgrounds/scenic"
+            android:layout_margin="@dimen/sizePaddingInside"
+            app:source="@{model.image}"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Text.Title.Medium.Black"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="@{model.title}"
+            app:layout_constraintTop_toBottomOf="@id/ivImages"
+            app:layout_constraintStart_toStartOf="@id/ivImages"
+            app:layout_constraintEnd_toEndOf="@id/ivImages"
+            android:layout_marginTop="@dimen/sizeMarginText"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
