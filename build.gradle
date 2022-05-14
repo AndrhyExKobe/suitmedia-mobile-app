@@ -12,8 +12,8 @@ buildscript {
         classpath "com.android.tools.build:gradle:$versions.gradle"
         classpath classpaths.navSafeArgs
         classpath classpaths.hilt
-        classpath "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:2.0.0"
-
+        classpath classpaths.mapsplatform
+        classpath classpaths.googleservice
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

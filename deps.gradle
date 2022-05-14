@@ -7,6 +7,8 @@ versions.navSafeArgs = '2.4.1'
 versions.firebaseAppDistGradle = '2.2.0'
 versions.playServicesGradle = "4.3.8"
 versions.firebaseCrashlyticsGradle = '2.8.1'
+versions.mapsplatform = "2.0.0"
+versions.googleservice = '4.3.10'
 
 /**
  *
@@ -58,6 +60,8 @@ versions.location = '17.1.0'
 versions.googlemaps = '17.0.0'
 versions.place = '2.4.0'
 versions.googleCore = '1.10.2'
+versions.playservice = '16.0.0'
+versions.firebasebom = '30.0.1'
 
 //picker image
 versions.yalantis = "2.2.6"
@@ -90,7 +94,8 @@ classpaths.kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin
 classpaths.gradle = "com.android.tools.build:gradle:${versions.gradle}"
 classpaths.navSafeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${versions.navSafeArgs}"
 classpaths.hilt = "com.google.dagger:hilt-android-gradle-plugin:${versions.hilt}"
-
+classpaths.mapsplatform = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:${versions.mapsplatform}"
+classpaths.googleservice = "com.google.gms:google-services:${versions.googleservice}"
 ext.classpaths = classpaths
 
 /**
@@ -149,6 +154,9 @@ googles.mapsService = "com.google.android.gms:play-services-maps:${versions.goog
 googles.locationService = "com.google.android.gms:play-services-location:${versions.location}"
 googles.place = "com.google.android.libraries.places:places:${versions.place}"
 googles.core = "com.google.android.play:core:${versions.googleCore}"
+googles.playservice = "com.google.android.gms:play-services-maps:${versions.playservice}"
+googles.firebasebom = "com.google.firebase:firebase-bom:${versions.firebasebom}"
+googles.firebaseanalytics = "com.google.firebase:firebase-analytics-ktx"
 
 deps.google = googles
 

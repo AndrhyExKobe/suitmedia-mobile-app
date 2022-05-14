@@ -33,5 +33,4 @@
     <string name="error_failed_pick_gallery_image">Gagal mengambil gambar dari galeri</string>
     <string name="error_task_cancelled">Task Cancelled</string>
 
-    <string name="google_api_key" translatable="false">AIzaSyBM_YCaUKl1WkQoI3OL0GRgJ3GF5CWr8Fg</string>
 </resources>

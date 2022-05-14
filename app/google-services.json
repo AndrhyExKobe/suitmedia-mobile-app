@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "887987563360",
+    "project_id": "suitemedia-test-350122",
+    "storage_bucket": "suitemedia-test-350122.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887987563360:android:cc2d9c9067fde0ffa1cc05",
+        "android_client_info": {
+          "package_name": "suitmedia.com.dev.suitemedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887987563360-e6qkhuu0q2bucejhmvdlt8f0losljduq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK__zd0uW7rGLvPhiweo98fGUM0ZJq1Q8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887987563360-e6qkhuu0q2bucejhmvdlt8f0losljduq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
